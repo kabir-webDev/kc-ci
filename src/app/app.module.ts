@@ -9,6 +9,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { ApiCallInterceptor } from './shared/interceptors/api-call.interceptor';
 import { CoreModule } from './core/core.module';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,6 +24,10 @@ import { CoreModule } from './core/core.module';
     MatButtonModule,
     HttpClientModule,
     CoreModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatSlideToggleModule,
+    MatCardModule,
   ],
   providers: [
     {

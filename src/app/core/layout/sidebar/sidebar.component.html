@@ -1,1 +1,27 @@
-<p>sidebar works!</p>
+<div class="flex flex-col w-full text-center gap-y-5 h-[100vh]">
+  <div>Menu Bar</div>
+  <div>
+    <a routerLink="user-list"
+      ><button class="inline-block px-8 py-3" mat-raised-button>
+        User List
+      </button></a
+    >
+  </div>
+
+  <div>
+    <a routerLink="add-user"
+      ><button class="inline-block px-8 py-3" mat-raised-button>
+        Add User
+      </button></a
+    >
+  </div>
+  <div><a routerLink="/todo/list" mat-raised-button>Todo list</a></div>
+  <div><a routerLink="/todo/user" mat-raised-button>User list</a></div>
+  <div>
+    <a routerLink=""
+      ><button class="inline-block px-8 py-3" mat-raised-button>
+        Back to Home
+      </button></a
+    >
+  </div>
+</div>

@@ -3,23 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './core/layout/layout.component';
 
 const childrenRoutes: Routes = [
-  // {
-  //   path: '',
-  //   pathMatch: 'xx',
-  //   redirectTo: '/xx',
-  // },
-  // {
-  //   path: '**',
-  //   loadChildren: () => import('./errors/errors.module').then(m => m.ErrorsModule)
-  // }
+  {
+    path: 'example',
+    loadChildren: () =>
+      import('./example/example.module').then((m) => m.ExampleModule),
+  },
 ];
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   redirectTo: 'auth',
-  //   pathMatch: 'full',
-  // },
   {
     path: 'auth',
     loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),

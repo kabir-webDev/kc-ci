@@ -1,2 +1,22 @@
-<p>layout works!</p>
-<app-sidebar></app-sidebar>
+<div>
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        <mat-icon>swipe_left_alt</mat-icon>
+      </button>
+      <app-sidebar></app-sidebar>
+    </mat-drawer>
+
+    <div class="example-sidenav-content">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <app-header></app-header>
+    </div>
+    <main>
+      <mat-card>
+        <router-outlet></router-outlet>
+      </mat-card>
+    </main>
+  </mat-drawer-container>
+</div>
