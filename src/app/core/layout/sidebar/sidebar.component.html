@@ -1,27 +1,25 @@
-<div class="flex flex-col w-full text-center gap-y-5 h-[100vh]">
-  <div>Menu Bar</div>
-  <div>
-    <a routerLink="user-list"
-      ><button class="inline-block px-8 py-3" mat-raised-button>
-        User List
-      </button></a
-    >
+<div>
+  <div
+    routerLink=""
+    class="p-7 flex text-white justify-center items-center gap-x-4 cursor-pointer"
+  >
+    <img
+      class="w-6 select-none"
+      src="https://console.klovercloud.com/assets/img/icons/ic_klovercloud_logo.png"
+    />
+    <h1 class="font-bold">KloverCloud CI-CD</h1>
   </div>
-
-  <div>
-    <a routerLink="add-user"
-      ><button class="inline-block px-8 py-3" mat-raised-button>
-        Add User
-      </button></a
+  <ul *ngFor="let app of appList">
+    <li
+      routerLink="example/ex"
+      class="px-8 py-3 text-sm hover:bg-dark-background-active hover:text-dark-slider-color text-white transition duration-100 cursor-pointer"
     >
-  </div>
-  <div><a routerLink="/todo/list" mat-raised-button>Todo list</a></div>
-  <div><a routerLink="/todo/user" mat-raised-button>User list</a></div>
-  <div>
-    <a routerLink=""
-      ><button class="inline-block px-8 py-3" mat-raised-button>
-        Back to Home
-      </button></a
-    >
-  </div>
+      <div class="flex gap-x-4">
+        <div>
+          <mat-icon>settings</mat-icon>
+        </div>
+        <div>{{ app }}</div>
+      </div>
+    </li>
+  </ul>
 </div>

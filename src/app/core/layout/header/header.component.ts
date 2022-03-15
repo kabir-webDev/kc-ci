@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-header',
@@ -6,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  constructor() {}
+  constructor(public dialog: MatDialog) {}
 
+  openDialog() {
+    // this.dialog.open(DialogElementsExampleDialog);
+    alert('User clicked!');
+  }
   ngOnInit(): void {}
 }
