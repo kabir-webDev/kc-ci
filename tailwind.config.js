@@ -21,13 +21,13 @@ module.exports = {
             'form': '#1A2C4A',
           } ,
           'text':{
-            'default':'#C5CEDA',
+            DEFAULT:'#C5CEDA',
             'label':'#495C7D',
             'icon':'#5C638B'
           },
           'slider-color': "#52BACC",
           'background':{
-            'default':'#1A2C4A',
+            DEFAULT:'#1A2C4A',
             '1': '#22375B',
             '2': '#67769B',
             '3': '#243C64',
@@ -35,7 +35,11 @@ module.exports = {
             '5': '#151F36',
             'active': '#243C64',
           }
-        }
+        },
+        
+      },
+      borderWidth: {
+        '1.5': '1.5px'
       }
     },
   },
